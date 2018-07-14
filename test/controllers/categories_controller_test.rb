@@ -5,9 +5,7 @@ class CategoriesControllerTest < ActionDispatch::IntegrationTest
 		@category = Category.create(name: "sports")
 	end
 
-
-
-	test "should get categories index" do |variable|
+	test "should get categories index" do 
 	 	get categories_path
 	 	assert_response :success
 	end
